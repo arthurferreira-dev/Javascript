@@ -17,6 +17,30 @@
     </style>
 </head>
 <body>
-    <div id="area">Clique Aqui!</div>
+    <div id="area" onmouseenter="entrada()" onmouseout="saida()">
+        Clique Aqui!
+    </div>
+
+    <script>
+        area.addEventListener('click', clique)
+
+        function clique() {
+            var area = document.getElementById('area')
+            area.innerText = 'Clicado!'
+            area.style.background = 'blue'
+        }
+
+        function entrada() {
+            var entrada = document.querySelector('div#area')
+            entrada.innerText = 'Entrou!'
+            entrada.style.background = 'brown'
+        }
+
+        function saida() {
+            var saida = document.querySelector('div#area')
+            saida.innerText = 'Saiu!'
+            saida.style.background = 'green'
+        }
+    </script>
 </body>
 </html>
