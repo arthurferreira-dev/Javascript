@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de População Nacional e Internacional (CPNI)</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1#title {
+            font-size: 1.35em;
+        }
+        h2#cpni {
+            text-align: left;
+        }
+        input {
+            margin-top: 10px;
+        }
+        div#cad {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="cpni">CPNI</h2>
+    <main>
+        <h1 id="title">Cadastro de População Nacional e Internacional</h1>
+            <label for="country">Seu País de origem:</label>
+            <input type="text" name="txtcountry" id="country" autocomplete="country" required minlength="8">
+            <div id="estr"></div>
+            <br>
+            <input type="button" value="Enviar Cadastro" onclick="cad()">
+    </main>
+
+    <script>
+        function cad() {
+            var country = document.querySelector('input#country')
+            var strcountry = String(country)
+            var estr = document.getElementById('estr')
+            
+            if (strcountry == 'Brasil') {
+                estr.innerHTML = 'você é brasileiro!'
+            } else {
+                estr.innerHTML = 'Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
