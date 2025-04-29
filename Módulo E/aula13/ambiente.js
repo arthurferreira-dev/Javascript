@@ -8,8 +8,8 @@ do { // Mesma funcionalidade (Teste lógico no final)
 
     var cont = 1
     while (cont <= 6) { // Mesma funcionalidade (Teste lógico no inicio)
-    console.log(`Andar ${cont}`)
-    cont++
+        console.log(`Andar ${cont}`)
+        cont++
     }
 
 /* Mesma funcionalidade só que pior
