@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício 01</title>
+    <title>Contador de Passos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1 id="title">Vamos contar</h1>
     </header>
     <section>
-        <div>
-            Testando
+        <div id="dados">
+            <label for="txtini">Início:</label> <input type="number" name="txtini" id="txtini"> <br>
+            <label for="txtfim">Fim:</label> <input type="number" name="txtfim" id="txtfim"> <br>
+            <label for="txtpas">Passo:</label> <input type="number" name="txtpas" id="txtpas"> <br>
+            <input type="button" value="Contar" onclick="contador()" style="margin-bottom: 20px;">
         </div>
-        <div>
-            Teste
+        <div id="res">
+            Resultado:
         </div>
     </section>
     <footer>
-        <p>&copy; Arthur Ferreira</p>
+        <p>&copy; Feito por Arthur Ferreira para o <a href="http://" target="_blank" >CursoemVideo</a>.</p>
     </footer>
 </body>
 <script src="script.js"></script>
