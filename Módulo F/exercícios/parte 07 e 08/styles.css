@@ -20,8 +20,8 @@ section {
     box-shadow: 5px 5px 10px #00000058;
 }
 
-input {
-    margin-top: 10px;
+input[type="button"] {
+    margin-top: 6px;
 }
 
 footer {
@@ -37,6 +37,12 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+select#flista {
+    width: 155px;
+    margin-top: 6px;
+}
+
 /*
 h1#title {
     animation: pulse-scale 3s infinite;

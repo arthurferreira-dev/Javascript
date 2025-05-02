@@ -8,17 +8,19 @@
 </head>
 <body>
     <header>
-        <h1 id="title">Vamos contar</h1>
+        <h1 id="title">Analisador de Números</h1>
     </header>
     <section>
-        <div id="dados">
-            <label for="txtini">Início:</label> <input type="number" name="txtini" id="txtini"> <br>
-            <label for="txtfim">Fim:</label> <input type="number" name="txtfim" id="txtfim"> <br>
-            <label for="txtpas">Passo:</label> <input type="number" name="txtpas" id="txtpas"> <br>
-            <input type="button" value="Contar" onclick="contador()" style="margin-bottom: 20px;">
+        <div>
+            Número (entre 1 e 100):
+            <input type="number" name="fnum" id="fnum"> 
+            <input type="button" value="Adicionar" onclick="Add()">
+            <select name="flista" id="flista" size="12">
+            </select>
+            <br> <input type="button" value="Finalizar" onclick="Final()">
         </div>
         <div id="res">
-            Calculo aqui!
+           
         </div>
     </section>
     <footer>
