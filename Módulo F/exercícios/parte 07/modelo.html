@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Passos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Vamos contar</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <label for="txtini">Início:</label> <input type="number" name="txtini" id="txtini"> <br>
+            <label for="txtfim">Fim:</label> <input type="number" name="txtfim" id="txtfim"> <br>
+            <label for="txtpas">Passo:</label> <input type="number" name="txtpas" id="txtpas"> <br>
+            <input type="button" value="Contar" onclick="contador()" style="margin-bottom: 20px;">
+        </div>
+        <div id="res">
+            Calculo aqui!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Feito por Arthur Ferreira para o <a href="https://cursoemvideo.com" target="_blank" >CursoemVideo</a>.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
